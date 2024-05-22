@@ -10,16 +10,11 @@ Welcome to our project! This project involves creating a basic job form using HT
 
 4.JavaScript Events: Handling basic events to enhance interactivity.
 
-## Features
-Responsive Layout: The form is designed to be responsive, adapting to various screen sizes using CSS grid and flexbox.
-Form Validation: Basic client-side form validation using JavaScript to ensure user input is correct.
-Interactive Elements: Enhancing user experience with interactive elements such as focus and hover effects.
-Project Structure
+
+## Project Structure
 The project consists of the following files:
 
-index.html: Contains the structure of the form using HTML.
-styles.css: Contains the styles for the form, utilizing CSS grid and flexbox.
-script.js: Contains the JavaScript code for handling form events and validations.
+index.html: Contains the structure of the form using HTML,Contains the styles for the form, utilizing CSS grid and flexbox, Contains the JavaScript code for handling form events and validations.
 How to Run the Project
 Clone the Repository: Download or clone the repository to your local machine.
 Open index.html: Open the index.html file in your web browser to view and interact with the form.
@@ -29,16 +24,13 @@ The HTML file includes:
 
 A form with fields such as name, email, phone number, and job position.
 Proper use of form attributes like action, method, and input types.
-
-CSS
-The CSS file includes:
-
+## ALL THE STYLING IS DONE WITHIN THE HTML file itself
 Grid Layout: Using CSS grid to structure the form layout.
 Flexbox: Using flexbox to align form elements.
 Styling: Custom styles for input fields, labels, buttons, and form layout.
 
+## ALL THE EVENT HANDLING IS DONE WITHIN THE HTML file itself
 JavaScript
-The JavaScript file includes:
 Event Listeners: Adding event listeners to form elements to handle events like submit and input.
 Form Validation: Simple validation checks for required fields and correct input formats.
 Learning Outcomes
