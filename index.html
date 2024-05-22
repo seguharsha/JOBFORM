@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./style.css">
+
+       <style>
+        body{
+    background-color: rgb(109, 168, 220);
+
+  }
+    .peddodu{
+        display: flex;
+        justify-content: center;
+        background-color: rgb(109, 168, 220);
+    }
+    body{
+                  font-family: sans-serif;
+
+}
+    .chinnodu{
+        display: grid;
+        width:800px;
+        grid-row-gap:15px;
+        grid-column-gap:10px;
+        grid-template-columns: repeat(2,390px);
+        grid-template-rows: repeat(12,120px);
+        background-color: white;
+    }
+    .header{
+        grid-column: span 2;
+        display: flex;
+        width:800px;
+        padding-top: 4%;
+    
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        flex-direction: column;
+        margin:0;
+        padding: 0;
+    }
+    .header p{
+        margin-top: 0%;
+        padding-top: 0%;
+        margin-bottom: 5% ;
+    }
+    .header h2{
+        margin-bottom: 1%;
+        font-family: sans-serif;
+    }
+
+/* NAMING SECTIOn */
+.name,.section,.city,.gender{
+    padding:7%;
+}
+.name input,.section input{
+    display: block;
+    padding: 10px;
+    width: 90%;
+    border-color: lightslategrey;
+    border-radius: 4px;
+}
+
+
+.email h4{
+    padding: 0;
+    margin: 0;
+    font-weight: 5;
+}
+
+.name h5{
+    padding-top:2px;
+    padding-bottom: 0px;
+    margin-top: 2px;
+    margin-bottom: 0px;
+}
+.gender{
+    grid-row-start:4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.gender{
+    display: block;
+   padding: 7%;
+    width: 90%;
+}
+
+.gender  h3{
+    padding: 0;
+    margin: 0;
+}
+.last h5{
+    padding-top:2px;
+    padding-bottom: 0px;
+    margin-top: 2px;
+
+    margin-bottom: 0px;
+}
+
+.last h5,.first h5{
+    
+        font-weight: 40;
+}
+
+.city{
+
+    grid-row-start:5;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.city select{
+    display: block;
+    padding: 10px;
+    border-color: lightslategrey;
+    border-radius: 4px;
+    width:100%;
+}
+
+.applied{
+    grid-row:6/7;
+    grid-column: 1/2;
+    padding-top: 0;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-bottom: 7%;
+    
+}
+.dob{
+    grid-row: 6/7;
+    grid-column: 2/3;
+    padding-top: 0;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-bottom: 7%;
+}
+
+.dob h4{
+    margin-top: 0;
+    font-weight: 40;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    }
+    .dob input{
+        display: block;
+    padding: 8px;
+    width: 90%;
+    border-radius: 4px;
+    }
+
+    .interviewdate{
+        grid-row: 7/8;
+    grid-column: 1/2;
+    padding-top: 0;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-bottom: 7%;
+    }
+
+    .interviewdate input{
+        display: block;
+    padding: 8px;
+    width: 90%;
+    border-radius: 4px;
+    }
+    .interviewdate h4{
+    margin-top: 0;
+    font-weight: 40;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    }
+
+    .calenderright{
+
+        grid-row: 7/9;
+    grid-column: 2/3;
+        margin-top: 1%;
+
+
+    }
+    .last,.phone,.calenderright,.dob{
+        margin-left:0;
+        padding-left: 0;
+    }
+    
+    .btngp{
+        display:grid;
+        grid-template-columns: repeat(2,38%);
+        grid-template-rows: repeat(3,80%);
+        row-gap:20%;
+        column-gap: 3%;
+        
+    }
+
+    .bttn{
+        border-radius: 8%;
+        border-color: blue;
+        color:blue;
+        background-color: transparent;
+    }
+   
+    .bttn:hover{
+            background-color: rgb(99, 99, 224);
+            color:white;
+            cursor: pointer;
+    }
+    
+    .naming{
+        display: flex;
+        align-items: end;
+        width:60%;
+        height:10%;
+        margin-top:9%;
+        height:25%;
+    }
+
+    .arrows{
+        display:flex;
+        margin-top:5%;
+        width:40%;
+        gap:10%;
+        
+        background-color: white;
+        justify-content: center;
+    }
+    .smalll,greatt{
+        background-color: white;
+    }
+    .small,.great{
+        border-radius: 50%;
+        background-color: aliceblue;
+
+    }
+    .upload{
+        grid-column: 1/3;
+        grid-row:10/12;
+    }
+    .uploadsection{
+        width:80%;
+        height:70%;
+        margin-left:10%;
+        border:2px dotted black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    img{
+        width:100px;
+        height: 100px;
+    }
+    .apply{
+        grid-column: 1/3;
+        grid-row:12/13;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .applybutton{
+        width:30%;
+        height: 30%;
+        font-size:110%;
+        background-color: rgb(45, 43, 43);
+        color: white;
+        
+    }
+    
+    .uploadsectiontext{
+        font-size: large;
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .origuploadsection{
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .origuploadsection{
+        visibility: hidden;
+    }
+    .example:hover .uploadsectiontext{
+        visibility: hidden;
+        cursor:pointer;
+    }
+
+    .example:hover .origuploadsection{
+        visibility: visible;
+        cursor:pointer;
+    }
+    span{
+        color:red;
+        font-size: large;
+    }
+       </style>
+
+    </head>
+    <body>
+      
+
+       <div class="peddodu">
+        <form>
+            <div class="chinnodu">
+                
+                <div class="header">
+                    <h2>Job Application Form</h2>
+                    <p>Please Fill Out The Form Below To Submit Your Job Application!</p>
+                    <div style="width: 100%; background-color: black; height: 1%;" ></div>
+                </div>
+                
+                    <div class="name first section">
+                        
+                    <label style="display: block; margin-bottom: 10px;" id="fname">Name<span> *</span></label>
+                    <input for="fname"  id="ffname" required>
+                    <h5>First Name</h5>
+                </div>
+                
+                <div class="name last section">
+                    <br>
+                    <label style="display: block; margin-bottom: 10px; "id="fname"></label>
+                      <input for="fname"  required>
+                        <h5>Last Name</h5>
+                </div>
+
+                
+                <div class="email section">
+                    <label style="display: block; margin-bottom: 10px;" id="fname">Email<span> *</span></label>
+                    <input for="fname" placeholder="ex:myname@example.com" required type="email" required>
+                    <h4>example@example.com</h4>
+                </div>
+                <div class="phone section">
+                    <label style="display: block; margin-bottom: 10px; "id="fname">Phone Number<span> *</span></label>
+                                        <input for="fname" type="tel" placeholder="000-000-000" required>
+                </div>
+            
+            
+            <div class="gender">
+                <h3>Gender</h3><br>
+            <input type="radio" name="Gender" id="male" >
+                <label >Male</label>
+                    <br>
+                <input type="radio" name="Gender" id="male" >
+                <label>Female</label>
+                    <br>
+                <input type="radio" name="Gender" id="male" >
+                <label>Transgender</label>
+            </div>
+            
+            <div class="city">
+                <label id="city" for="city" style="display: block; margin-bottom: 10px; ">City</label>
+                <select name="city" id="city" required>
+                    <option value="" disabled selected hidden>Please Select</option>
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Kurnool">Kurnool</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Delhi">Delhi</option>
+                  </select>            
+            </div>
+
+            <div class="applied section">
+                <label for="appliedpostion" style="display: block; margin-bottom: 10px; "> Applied Position</label>
+                <input type="text" placeholder="" required id="appliedpostion">
+            </div>
+
+            <div class="dob">
+                <h4 style="display: block; margin-bottom: 10px;">Earliest Possible Start Date</h4>
+
+                    <input type="date" id="Test_DatetimeLocall" placeholder="MM-DD-YYYY" onchange="datefinder()">
+                    <h4>Date</h4>
+                </div>
+       
+            <div class="interviewdate">
+                <h4 style="display: block; margin-bottom: 10px;">Preferred Interview Date</h4>
+
+                    <input type="date" id="Test_DatetimeLocal" placeholder="MM-DD-YYYY" onchange="datefinder()">
+            </div>
+            
+            <div class="calenderright">
+                <div class="datesection" style="width:100%; height: 30%; display: flex; gap:10%">
+               
+
+                        <h4 id="datepicker" style="background-color: transparent;" >Monday,March 27</h4>                     
+                     
+                    <div class="arrows">
+                     
+                        <div class="smalll">
+                            <button class="small" ><</button>
+                        </div>
+                     
+                        <div class="greatt">
+                                <button class="great" >></button>
+                       </div>
+
+                    </div>
+                </div>
+                <div class="btngp">
+                    <button class="one bttn">11:30</button>
+                    <button class="two bttn">12:30</button>
+                    <button class="three bttn">1:30</button>
+                    <button class="four bttn">4:30</button>
+                    <button class="five bttn">5:30</button>
+                    <button class="six bttn">6:30</button>
+                </div>
+            </div>
+                
+            <div class="upload">
+                <label for="" style="display: block; padding-left: 3%;">Upload Resume<span> *</span></label>
+                    <br><br>
+            <div class="example">
+                <div class="uploadsection" style="background-color: rgb(252, 250, 250);">
+                    <img src="https://www.freeiconspng.com/uploads/upload-icon-30.png" class="uploadimg">
+                    
+                    <div class="origuploadsection">
+                        <input type="file">
+                    </div>
+                    <div class="uploadsectiontext">
+                        <h5>Drag and drop items</h5>
+                    </div>
+                    
+            </div> 
+            </div>
+                <div style="width: 100%; margin-top: 5%; background-color: black; height: 1%;" ></div>
+            </div>
+
+            <div class="apply">
+                <input value="Apply" type="Submit" class="applybutton">
+            </div>
+        </div>
+    </form>
+
+    </div>
+        
+    <script >
+        function datefinder(){
+    let p=document.getElementById("Test_DatetimeLocal").value;
+    let y=new Date(p);
+    const arr=["January","February","March","April","May","June","July","August","September","October","November","December"];
+    let res1=arr[y.getMonth()];
+    let res2=y.getDate();
+    let res3=y.getFullYear();
+    let over=res1+", "+res2+", "+res3;
+    document.getElementById("datepicker").innerHTML=over;
+
+   
+
+}
+    </script>        
+</body>
+</html>
